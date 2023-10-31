@@ -41,13 +41,13 @@
 
 						<nav
 							id="nav-menu"
-							class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none"
+							class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark900 dark:shadow-slate-800 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
 						>
 							<ul class="block lg:flex">
 								<li class="group">
 									<a
 										href="#home"
-										class="mx-8 flex py-2 text-base text-dark900 group-hover:text-primary"
+										class="mx-8 flex py-2 text-base text-dark900 group-hover:text-primary dark:text-white"
 									>
 										Beranda
 									</a>
@@ -55,7 +55,7 @@
 								<li class="group">
 									<a
 										href="#about"
-										class="mx-8 flex py-2 text-base text-dark900 group-hover:text-primary"
+										class="mx-8 flex py-2 text-base text-dark900 group-hover:text-primary dark:text-white"
 									>
 										Tentang Saya
 									</a>
@@ -63,7 +63,7 @@
 								<li class="group">
 									<a
 										href="#portfolio"
-										class="mx-8 flex py-2 text-base text-dark900 group-hover:text-primary"
+										class="mx-8 flex py-2 text-base text-dark900 group-hover:text-primary dark:text-white"
 									>
 										Portfolio
 									</a>
@@ -71,7 +71,7 @@
 								<li class="group">
 									<a
 										href="#clients"
-										class="mx-8 flex py-2 text-base text-dark900 group-hover:text-primary"
+										class="mx-8 flex py-2 text-base text-dark900 group-hover:text-primary dark:text-white"
 									>
 										Clients
 									</a>
@@ -79,7 +79,7 @@
 								<li class="group">
 									<a
 										href="#blog"
-										class="mx-8 flex py-2 text-base text-dark900 group-hover:text-primary"
+										class="mx-8 flex py-2 text-base text-dark900 group-hover:text-primary dark:text-white"
 									>
 										Blog
 									</a>
@@ -87,10 +87,26 @@
 								<li class="group">
 									<a
 										href="#contact"
-										class="mx-8 flex py-2 text-base text-dark900 group-hover:text-primary"
+										class="mx-8 flex py-2 text-base text-dark900 group-hover:text-primary dark:text-white"
 									>
 										Contact
 									</a>
+								</li>
+								<li class="group mt-3 flex items-center pl-8">
+									<div class="flex">
+										<span class="mr-2 text-sm text-dark500">Light</span>
+										<input type="checkbox" class="hidden" aria-label="toggle" id="dark-toggle" />
+										<label for="dark-toggle">
+											<div
+												class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-dark500 p-1"
+											>
+												<div
+													class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"
+												></div>
+											</div>
+										</label>
+										<span class="ml-2 text-sm text-dark500">Dark</span>
+									</div>
 								</li>
 							</ul>
 						</nav>
@@ -101,7 +117,7 @@
 		<!-- Header End -->
 
 		<!-- Hero section start -->
-		<section id="home" class="pt-36">
+		<section id="home" class="pt-36 dark:bg-dark900">
 			<div class="container">
 				<div class="flex flex-wrap">
 					<!-- Profile -->
