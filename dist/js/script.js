@@ -25,6 +25,7 @@ hamburger.addEventListener('click', function () {
 })
 
 // Click Hamburger
+
 window.addEventListener('click', function (e) {
 	if (e.target != hamburger && e.target != navMenu) {
 		hamburger.classList.remove('hamburger-active')
@@ -32,10 +33,26 @@ window.addEventListener('click', function (e) {
 	}
 })
 
-// Dark Mode Toggle
+// Darkmode toggle
 const darkToggle = document.querySelector('#dark-toggle')
 const html = document.querySelector('html')
 
 darkToggle.addEventListener('click', function () {
-	darkToggle.checked ? html.classList.add('dark') : html.classList.remove('dark')
+	if (darkToggle.checked) {
+		html.classList.add('dark')
+		localStorage.theme = 'dark'
+	} else {
+		html.classList.remove('dark')
+		localStorage.theme = 'light'
+	}
 })
+
+// On page load or when changing themes
+if (
+	localStorage.theme === 'dark' ||
+	(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+) {
+	darkToggle.checked = true
+} else {
+	darkToggle.checked = false
+}
