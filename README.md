@@ -8,4 +8,4 @@
 
 ## Demo
 
-<https://dannyhma.github.io/portfolio-tailwind>{:target="_blank"}
+[https://dannyhma.github.io/portfolio-tailwind](https://dannyhma.github.io/portfolio-tailwind){:target="_blank" rel="noopener noreferrer"}
