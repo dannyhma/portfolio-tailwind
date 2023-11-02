@@ -8,6 +8,4 @@
 
 ## Demo
 
-[Opens in new tab](https://dannyhma.github.io/portfolio-tailwind/)
-
-Visit <a href="https://dannyhma.github.io/portfolio-tailwind/">https://dannyhma.github.io/portfolio-tailwind</a>
+<https://dannyhma.github.io/portfolio-tailwind/>
